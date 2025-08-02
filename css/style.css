@@ -80,9 +80,29 @@ h2 {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    margin: 60px 0px;
 }
 
 .card-block {
     display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card {
+    max-width: 200px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Quote block */
+.quote-block {
+    margin: 200px 0px;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
 }
 
