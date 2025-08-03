@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* General and defaulting */
-body {
+* {
     margin: 0;
     font-family: Roboto, Arial, sans-serif;
 }
@@ -22,10 +22,14 @@ button {
     padding: 8px 16px;
   }
 
+  .text {
+    font-size: 18px;
+  }
+
 /* Header and footer */
 .header, .footer {
     background-color: #1F2937;
-    padding: 40px 240px;
+    padding: 40px 260px;
 }
 
 .nav {
@@ -51,23 +55,25 @@ button {
 
 .header-contents {
     display: flex;
-    padding: 100px 0px;;
+    padding: 100px 0px;
+    gap: 20px;
 }
 
-.header-contents .text-box h1 {
+.header-contents .text h1 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-.header-contents .text-box {
+.header-contents .text {
     font-size: 18px;
     color: #E5E7EB;
     width: 500px;
 }
 
-.header-contents .text-box button {
+.header-contents .text button {
     background-color: #3882F6;
+    margin-top: 30px;
 }
 
 .header-contents .image-box {
@@ -87,6 +93,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 80px;
+    margin: 60px 0px 120px 0px;
 }
 
 .card {
@@ -96,13 +103,64 @@ h2 {
 .card img {
   width: 200px;
   height: 200px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.card .text {
+    text-align: center;
 }
 
 /* Quote block */
 .quote-block {
-    margin: 200px 0px;
+    margin: 120px 0px;
+    padding: 200px 260px;
     background-color: #E5E7EB;
+}
+
+.quote-block .quote {
     font-size: 36px;
+    font-style: italic;
     color: #1F2937;
 }
 
+.quote-block .source {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Modal */
+.modal-box {
+    display: flex;
+    justify-content: center;
+    margin: 120px 0px;
+}
+
+.modal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    gap: 30px;
+    background-color: #3882F6;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.modal .modal-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #F9FAF8;
+}
+
+.modal .text {
+    color: #E5E7EB;
+}
+
+.modal button {
+    border-style: solid;
+    color: #F9FAF8;
+    border-color: #E5E7EB;
+    background-color: #3882F6;
+}
