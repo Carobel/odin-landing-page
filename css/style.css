@@ -80,6 +80,11 @@ button {
     margin-left: auto;
 }
 
+.footer {
+    text-align: center;
+    color: #E5E7EB;
+}
+
 /* Information */
 h2 {
     text-align: center;
@@ -139,10 +144,10 @@ h2 {
 
 .modal {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 700px;
-    gap: 30px;
+    width: 800px;
+    gap: 60px;
     background-color: #3882F6;
     padding: 50px;
     border-radius: 25px;
@@ -163,4 +168,5 @@ h2 {
     color: #F9FAF8;
     border-color: #E5E7EB;
     background-color: #3882F6;
+    flex-shrink: 0;
 }
